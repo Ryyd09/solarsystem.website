@@ -1,20 +1,23 @@
 <html>
 	<head>
-		<title>Comment</title>
+		<title>Comment section</title>
 	</head>
-	<body bgcolor="LightGreen">
-	<form method="post" action="comment.php">
-		Name<input type="text" name="name">
-		Gender<select name="gender">
+		<marquee behavior="alternate" direction="left">
+			<img src = "comment.png" width = "350">
+		</marquee>
+		<body bgcolor="LightSeaGreen">
+		<form method="post" action="comment.php">
+		<font face="verdana" color="black" size="4">
+		Name:<input type="text" name="name" placeholder="Your name"><br><br>
+		Gender:<select name="gender">
 			<option value="male">Male</option>
 			<option value="female">Female</option>
-		</select>
-		Country<input type="text" name="country">
-		Comment section<br>
-		<textarea name="comment" rows="5" cols="30">
-			Type a comment here
-		</textarea>
-		<input type="submit" value="Send">	
+		</select><br><br>
+		Country:<input type="text" name="country" placeholder="Your country"><br><br>
+		Comment section: <br><br>
+		<textarea name="comment" rows="5" cols="30" placeholder="Type a comment here">
+		</textarea><br><br>
+		<input type="submit" value="Submit">
 	</form>
 </body>
 </html>
